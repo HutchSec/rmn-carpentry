@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="RMN Carpentry Services of Steger, IL. Framing, decks, doors and windows, interior trim and built-ins across the Chicago Southland. One call does it all. (708) 758-2910">
+<meta name="theme-color" content="#E6E3DB">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RMN Carpentry Services | Steger, IL">
+<meta property="og:description" content="From framing to trim, and everything in between. Carpentry contractor serving Steger and the Chicago Southland.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2315181B'/%3E%3Ctext y='74' x='50' text-anchor='middle' font-family='Helvetica,Arial' font-weight='bold' font-size='62' fill='%231B58A0'%3ER%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root{
+    color-scheme: light dark;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html{ -webkit-text-size-adjust: 100%; }
+  body{ margin: 0; }
+  img{ max-width: 100%; }
+  [hidden]{ display: none !important; }
+</style>
+<title>RMN Carpentry Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Bitter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   RMN Carpentry Services — Steger, IL
+   Palette: graphite ink, shop-paper ground, chalk-line blue,
+            lumber-crayon red (used once), pine lumber fill.
+   Type: Archivo (expanded, display) / Bitter (body) / IBM Plex Mono (specs)
+   ============================================================ */
+
+:root{
+  /* light — planed board under shop light */
+  --ground:      #E6E3DB;
+  --surface:     #F3F1EB;
+  --surface-2:   #EDEAE2;
+  --ink:         #15181B;
+  --ink-2:       #414950;
+  --ink-3:       #6E767D;
+  --rule:        #CBC5B8;
+  --rule-strong: #9A9384;
+  --chalk:       #1B58A0;
+  --chalk-soft:  #DDE5F0;
+  --crayon:      #BF3B1E;
+  --lumber:      #DCCFB2;
+  --shadow:      0 1px 0 #FFFFFF88, 0 8px 30px -22px #15181B66;
+
+  --fs-display: clamp(2.7rem, 8.2vw, 5.6rem);
+  --fs-h2:      clamp(1.7rem, 3.8vw, 2.7rem);
+  --fs-h3:      clamp(1.12rem, 1.9vw, 1.35rem);
+  --fs-body:    clamp(1rem, 1.15vw, 1.07rem);
+  --fs-mono:    0.745rem;
+
+  --gutter: clamp(20px, 5vw, 64px);
+  --maxw: 1240px;
+
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Bitter", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:      #131517;
+    --surface:     #191C1F;
+    --surface-2:   #1F2327;
+    --ink:         #E9E5DC;
+    --ink-2:       #AEB5BB;
+    --ink-3:       #838B92;
+    --rule:        #2C3136;
+    --rule-strong: #4A5158;
+    --chalk:       #7FB2EC;
+    --chalk-soft:  #16293F;
+    --crayon:      #E4714E;
+    --lumber:      #3B382F;
+    --shadow:      0 1px 0 #FFFFFF0A, 0 8px 30px -22px #000000;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:      #131517;
+  --surface:     #191C1F;
+  --surface-2:   #1F2327;
+  --ink:         #E9E5DC;
+  --ink-2:       #AEB5BB;
+  --ink-3:       #838B92;
+  --rule:        #2C3136;
+  --rule-strong: #4A5158;
+  --chalk:       #7FB2EC;
+  --chalk-soft:  #16293F;
+  --crayon:      #E4714E;
+  --lumber:      #3B382F;
+  --shadow:      0 1px 0 #FFFFFF0A, 0 8px 30px -22px #000000;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img{ max-width: 100%; }
+[hidden]{ display: none !important; }
+
+a{ color: inherit; }
+:focus-visible{
+  outline: 2px solid var(--chalk);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap{
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---------- utility type ---------- */
+.mono{
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.eyebrow{
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before{
+  content: "";
+  width: 22px;
+  height: 0;
+  border-top: 2px solid var(--chalk);
+  flex: none;
+}
+
+h1, h2, h3{
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 118;
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+  margin: 0;
+}
+h2{ font-size: var(--fs-h2); }
+h3{
+  font-size: var(--fs-h3);
+  font-variation-settings: "wdth" 108;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.005em;
+}
+p{ margin: 0; }
+.prose{ max-width: 62ch; color: var(--ink-2); }
+
+/* ---------- tape-measure divider ---------- */
+.tape{
+  height: 15px;
+  border-top: 1px solid var(--rule-strong);
+  background-image:
+    repeating-linear-gradient(to right, var(--rule) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(to right, var(--rule-strong) 0 1px, transparent 1px 120px);
+  background-size: 100% 5px, 100% 11px;
+  background-repeat: no-repeat;
+  background-position: left top, left top;
+}
+
+/* ---------- header ---------- */
+.topbar{
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  background: color-mix(in srgb, var(--ground) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar-in{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 62px;
+  padding-block: 10px;
+  flex-wrap: wrap;
+}
+.mark{
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  text-decoration: none;
+  margin-right: auto;
+}
+.mark-r{
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 125;
+  font-weight: 900;
+  font-size: 1.22rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.mark-sub{
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.topnav{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.topnav a{
+  text-decoration: none;
+  color: var(--ink-2);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color .15s, border-color .15s;
+}
+.topnav a:hover{ color: var(--ink); border-bottom-color: var(--chalk); }
+@media (max-width: 860px){ .topnav{ display: none; } }
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 17px;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--chalk);
+  background: var(--chalk);
+  color: #FFF;
+  transition: transform .12s ease, filter .15s ease;
+  white-space: nowrap;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .btn{ color: #0E1113; }
+  :root:not([data-theme="light"]) .btn-ghost{ color: var(--ink); }
+}
+:root[data-theme="dark"] .btn{ color: #0E1113; }
+:root[data-theme="dark"] .btn-ghost{ color: var(--ink); }
+.btn:hover{ transform: translateY(-1px); filter: saturate(1.15); }
+.btn-ghost{
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--rule-strong);
+}
+.btn-ghost:hover{ border-color: var(--ink-2); }
+
+/* ---------- hero ---------- */
+.hero{
+  padding-block: clamp(46px, 8vw, 92px) 0;
+}
+.hero h1{
+  font-size: var(--fs-display);
+  font-variation-settings: "wdth" 122;
+  font-weight: 900;
+  max-width: 17ch;
+  margin-top: 20px;
+}
+.hero h1 em{
+  font-style: normal;
+  color: var(--chalk);
+}
+.hero-lede{
+  margin-top: 22px;
+  font-size: clamp(1.06rem, 1.5vw, 1.24rem);
+  max-width: 48ch;
+  color: var(--ink-2);
+}
+.hero-cta{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.hero-meta{
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  color: var(--ink-3);
+  border-top: 1px solid var(--rule);
+  padding-top: 14px;
+}
+.hero-meta span{ display: inline-flex; align-items: center; gap: 7px; }
+.dot{ width: 5px; height: 5px; background: var(--crayon); flex: none; }
+
+/* ---------- the drawing ---------- */
+.drawing{
+  margin-top: clamp(38px, 6vw, 62px);
+  border: 1px solid var(--rule);
+  border-bottom: none;
+  background: var(--surface);
+  padding: clamp(14px, 2.4vw, 26px) clamp(10px, 2vw, 22px) 0;
+  overflow-x: auto;
+}
+.drawing svg{ display: block; width: 100%; min-width: 660px; height: auto; }
+.dw-lumber{ fill: var(--lumber); stroke: var(--rule-strong); stroke-width: 1.1; }
+.dw-face{ fill: var(--surface-2); stroke: var(--rule-strong); stroke-width: 1.1; }
+.dw-trim{ fill: var(--surface); stroke: var(--rule-strong); stroke-width: 1.1; }
+.dw-thin{ fill: none; stroke: var(--rule-strong); stroke-width: 1; }
+.dw-chalk{ fill: none; stroke: var(--chalk); stroke-width: 1.6; }
+.dw-crayon{ fill: none; stroke: var(--crayon); stroke-width: 2.2; }
+.dw-t{
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  font-weight: 500;
+}
+.dw-t-em{ fill: var(--chalk); }
+.snap{
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 0;
+  animation: snap 1.1s cubic-bezier(.16,.9,.3,1) both;
+}
+@keyframes snap{ from{ stroke-dashoffset: 1200; } to{ stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce){
+  .snap{ animation: none; stroke-dashoffset: 0; }
+  .btn{ transition: none; }
+}
+.drawing-cap{
+  border-top: 1px solid var(--rule);
+  border-inline: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--surface-2);
+  color: var(--ink-3);
+  padding: 10px clamp(12px, 2vw, 22px);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ---------- section scaffold ---------- */
+section{ padding-block: clamp(56px, 8vw, 104px); }
+.sec-head{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(18px, 4vw, 54px);
+  align-items: end;
+}
+@media (max-width: 800px){
+  .sec-head{ grid-template-columns: 1fr; align-items: start; }
+}
+.sec-head h2{ margin-top: 14px; }
+
+/* ---------- scope sheet ---------- */
+.scope{
+  margin-top: clamp(34px, 5vw, 56px);
+  display: grid;
+  gap: 0;
+}
+.phase{ border-top: 2px solid var(--ink); }
+.phase-head{
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding-block: 13px;
+  flex-wrap: wrap;
+}
+.phase-head .mono{ color: var(--chalk); }
+.phase-note{ color: var(--ink-3); font-size: 0.93rem; }
+.row{
+  display: grid;
+  grid-template-columns: 15ch minmax(0, 1fr);
+  gap: 6px clamp(16px, 3vw, 40px);
+  padding-block: 17px;
+  border-top: 1px solid var(--rule);
+  align-items: baseline;
+}
+@media (max-width: 680px){
+  .row{ grid-template-columns: 1fr; gap: 5px; }
+}
+.row h3{ margin: 0; }
+.row p{ color: var(--ink-2); font-size: 0.97rem; }
+.scope-foot{
+  border-top: 1px solid var(--rule);
+  padding-top: 20px;
+  margin-top: 0;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  color: var(--ink-2);
+  flex-wrap: wrap;
+}
+.scope-foot strong{
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 112;
+  font-weight: 800;
+}
+
+/* ---------- process (a real sequence) ---------- */
+.band{ background: var(--surface); border-block: 1px solid var(--rule); }
+.steps{
+  margin-top: clamp(32px, 5vw, 50px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 30px);
+}
+@media (max-width: 900px){ .steps{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 520px){ .steps{ grid-template-columns: 1fr; } }
+.step{
+  border-top: 2px solid var(--chalk);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.step .mono{ color: var(--chalk); }
+.step p{ color: var(--ink-2); font-size: 0.95rem; }
+
+/* ---------- one call does it all ---------- */
+.split{
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+@media (max-width: 900px){ .split{ grid-template-columns: 1fr; } }
+.claims{ display: grid; gap: 0; }
+.claim{
+  border-top: 1px solid var(--rule);
+  padding-block: 18px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 4px 14px;
+}
+.claim:first-child{ border-top: 2px solid var(--ink); }
+.claim svg{ width: 22px; height: 22px; margin-top: 3px; }
+.claim p{ color: var(--ink-2); font-size: 0.96rem; grid-column: 2; }
+
+/* ---------- service area ---------- */
+.towns{
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.town{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  padding: 6px 11px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-2);
+}
+.town-home{
+  border-color: var(--chalk);
+  background: var(--chalk-soft);
+  color: var(--chalk);
+  font-weight: 600;
+}
+
+/* ---------- contact ---------- */
+.contact-grid{
+  margin-top: clamp(30px, 5vw, 46px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+@media (max-width: 800px){ .contact-grid{ grid-template-columns: 1fr; } }
+.card{
+  background: var(--ground);
+  padding: clamp(20px, 3vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-decoration: none;
+}
+.card .mono{ color: var(--ink-3); }
+.card-val{
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 110;
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2.4vw, 1.58rem);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  word-break: break-word;
+}
+a.card:hover .card-val{ color: var(--chalk); }
+.card small{ color: var(--ink-3); font-size: 0.88rem; }
+
+.closer{
+  margin-top: clamp(34px, 5vw, 52px);
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  flex-wrap: wrap;
+  border-top: 2px solid var(--ink);
+  padding-top: clamp(24px, 4vw, 34px);
+}
+.closer h2{ max-width: 16ch; }
+
+/* ---------- footer ---------- */
+footer{
+  border-top: 1px solid var(--rule);
+  padding-block: 30px 40px;
+  color: var(--ink-3);
+}
+.foot-in{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px 30px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+footer a{ color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule); }
+footer a:hover{ color: var(--chalk); border-bottom-color: var(--chalk); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="mark" href="#top">
+      <span class="mark-r">RMN CARPENTRY</span>
+      <span class="mark-sub mono">Steger, IL</span>
+    </a>
+    <nav class="topnav mono">
+      <a href="#scope">What we build</a>
+      <a href="#how">How it goes</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:+17087582910">(708) 758-2910</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="mono eyebrow">Carpentry Contractor &middot; Chicago Southland</p>
+      <h1>From <em>framing</em> to <em>trim</em>, and everything in between.</h1>
+      <p class="hero-lede">One call does it all. Rough framing, exterior work and finish carpentry
+        handled by the same crew &mdash; so nothing falls through the gap between trades.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+17087582910">Call (708) 758-2910</a>
+        <a class="btn btn-ghost" href="mailto:rmncarpentry@hotmail.com?subject=Carpentry%20project%20inquiry">Email for an estimate</a>
+      </div>
+      <p class="hero-meta mono">
+        <span><i class="dot"></i>Licensed &amp; insured</span>
+        <span><i class="dot"></i>Based in Steger, IL</span>
+        <span><i class="dot"></i>Residential &amp; light commercial</span>
+      </p>
+    </div>
+
+    <div class="wrap">
+      <div class="drawing">
+        <svg viewBox="0 0 1200 400" role="img" aria-label="Wall section drawing: open stud framing on the left with studs sixteen inches on center and a rough opening, transitioning at a snapped chalk line to a finished wall on the right with window casing, baseboard and crown molding.">
+          <!-- dimension line over framing -->
+          <g class="dw-thin">
+            <line x1="67" y1="52" x2="67" y2="86"></line>
+            <line x1="147" y1="52" x2="147" y2="86"></line>
+            <line x1="227" y1="52" x2="227" y2="86"></line>
+            <line x1="307" y1="52" x2="307" y2="86"></line>
+            <line x1="67" y1="58" x2="307" y2="58"></line>
+            <line x1="63" y1="54" x2="71" y2="62"></line>
+            <line x1="143" y1="54" x2="151" y2="62"></line>
+            <line x1="223" y1="54" x2="231" y2="62"></line>
+            <line x1="303" y1="54" x2="311" y2="62"></line>
+          </g>
+          <text class="dw-t dw-t-em" x="120" y="44">16&#8243; O.C.</text>
+
+          <!-- plates -->
+          <rect class="dw-lumber" x="40" y="64" width="520" height="13"></rect>
+          <rect class="dw-lumber" x="40" y="77" width="520" height="13"></rect>
+          <rect class="dw-lumber" x="40" y="313" width="520" height="14"></rect>
+
+          <!-- full-height studs -->
+          <rect class="dw-lumber" x="60" y="90" width="14" height="223"></rect>
+          <rect class="dw-lumber" x="140" y="90" width="14" height="223"></rect>
+          <rect class="dw-lumber" x="220" y="90" width="14" height="223"></rect>
+          <rect class="dw-lumber" x="300" y="90" width="14" height="223"></rect>
+          <rect class="dw-lumber" x="466" y="90" width="14" height="223"></rect>
+          <rect class="dw-lumber" x="546" y="90" width="14" height="223"></rect>
+
+          <!-- rough opening: header, cripples, sill -->
+          <rect class="dw-lumber" x="314" y="138" width="152" height="24"></rect>
+          <rect class="dw-lumber" x="356" y="90" width="14" height="48"></rect>
+          <rect class="dw-lumber" x="410" y="90" width="14" height="48"></rect>
+          <rect class="dw-lumber" x="314" y="246" width="152" height="12"></rect>
+          <rect class="dw-lumber" x="356" y="258" width="14" height="55"></rect>
+          <rect class="dw-lumber" x="410" y="258" width="14" height="55"></rect>
+          <text class="dw-t" x="314" y="130">ROUGH OPENING</text>
+
+          <!-- chalk line: the transition -->
+          <line class="dw-chalk snap" x1="600" y1="46" x2="600" y2="356"></line>
+          <text class="dw-t dw-t-em" x="612" y="44">SNAP LINE</text>
+
+          <!-- finished wall -->
+          <rect class="dw-face" x="640" y="90" width="520" height="223"></rect>
+          <!-- crown -->
+          <rect class="dw-trim" x="640" y="77" width="520" height="8"></rect>
+          <rect class="dw-trim" x="640" y="85" width="520" height="7"></rect>
+          <!-- base -->
+          <rect class="dw-trim" x="640" y="285" width="520" height="6"></rect>
+          <rect class="dw-trim" x="640" y="291" width="520" height="22"></rect>
+          <!-- casing + stool + apron, aligned to the rough opening opposite -->
+          <rect class="dw-trim" x="854" y="130" width="172" height="118"></rect>
+          <rect class="dw-face" x="868" y="144" width="144" height="90"></rect>
+          <rect class="dw-trim" x="846" y="248" width="188" height="9"></rect>
+          <rect class="dw-trim" x="862" y="257" width="156" height="9"></rect>
+          <text class="dw-t" x="854" y="122">CASING &#183; STOOL &#183; APRON</text>
+          <text class="dw-t" x="1046" y="305">BASE</text>
+          <text class="dw-t" x="1046" y="72">CROWN</text>
+
+          <!-- floor line, snapped -->
+          <line class="dw-crayon snap" x1="40" y1="327" x2="1160" y2="327"></line>
+
+          <text class="dw-t" x="40" y="372">ROUGH CARPENTRY</text>
+          <text class="dw-t" x="640" y="372">FINISH CARPENTRY</text>
+        </svg>
+      </div>
+      <p class="drawing-cap mono">
+        <span>Wall section &mdash; same crew, both ends of the job</span>
+        <span>RMN Carpentry Services &middot; Steger, IL</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SCOPE ============ -->
+  <section id="scope">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono eyebrow">What we build</p>
+          <h2>A job runs in three stages. We work all three.</h2>
+        </div>
+        <p class="prose">Most homeowners end up coordinating a framer, a deck guy and a trim carpenter
+          on the same project, then refereeing when the work doesn't line up. RMN carries the job
+          from the first stud to the last piece of base shoe.</p>
+      </div>
+
+      <div class="scope">
+
+        <div class="phase">
+          <div class="phase-head">
+            <span class="mono">Stage 01 &mdash; Rough</span>
+            <span class="phase-note">Structure. Everything that gets covered up later.</span>
+          </div>
+          <div class="row">
+            <h3>Framing</h3>
+            <p>Walls, floor systems, roof framing and additions &mdash; laid out 16&#8243; on center,
+              plumb, square and ready for the trades that follow.</p>
+          </div>
+          <div class="row">
+            <h3>Structural repairs</h3>
+            <p>Sistering joists, replacing rotted rim and sill, correcting sagging floors,
+              rebuilding headers and load-bearing walls.</p>
+          </div>
+          <div class="row">
+            <h3>Subfloor &amp; sheathing</h3>
+            <p>Squeak-free subfloor, wall and roof sheathing, blocking and backing set where the
+              finish carpentry will need it.</p>
+          </div>
+          <div class="row">
+            <h3>Basement build-out</h3>
+            <p>Furring and framing basement walls, soffits for ductwork and plumbing, and the
+              rough openings for new doors.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-head">
+            <span class="mono">Stage 02 &mdash; Exterior</span>
+            <span class="phase-note">Weather, wear and everything outside the sheathing.</span>
+          </div>
+          <div class="row">
+            <h3>Decks &amp; stairs</h3>
+            <p>New decks, rebuilds and resurfaces &mdash; ledger flashed properly, joists hung,
+              stringers cut on site, boards run to a straight line.</p>
+          </div>
+          <div class="row">
+            <h3>Railings &amp; privacy</h3>
+            <p>Code-height rail, posts through the framing rather than bolted to a board,
+              pergolas and privacy screens.</p>
+          </div>
+          <div class="row">
+            <h3>Soffit, fascia &amp; trim</h3>
+            <p>Rotted fascia and soffit replaced, exterior door and window trim, porch columns
+              and ceilings.</p>
+          </div>
+          <div class="row">
+            <h3>Doors &amp; windows</h3>
+            <p>New units set and shimmed square, old openings reframed, entry and patio doors
+              hung so they latch the same way in January and July.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-head">
+            <span class="mono">Stage 03 &mdash; Finish</span>
+            <span class="phase-note">The part everyone actually looks at.</span>
+          </div>
+          <div class="row">
+            <h3>Interior trim</h3>
+            <p>Base, casing, crown and chair rail &mdash; coped inside corners, tight miters,
+              scarf joints landed on framing.</p>
+          </div>
+          <div class="row">
+            <h3>Built-ins &amp; shelving</h3>
+            <p>Bookcases, benches, mudroom lockers, closet systems and mantels built to fit
+              the wall they're going on.</p>
+          </div>
+          <div class="row">
+            <h3>Stairs &amp; handrail</h3>
+            <p>Treads and risers, skirt board, newels and handrail &mdash; including retrofitting
+              a rough basement stair into a finished one.</p>
+          </div>
+          <div class="row">
+            <h3>Doors &amp; hardware</h3>
+            <p>Interior doors hung, casing wrapped, hinges and hardware set, and old doors
+              re-fit to openings that have moved.</p>
+          </div>
+        </div>
+
+        <p class="scope-foot">
+          <strong>&hellip; and everything in between.</strong>
+          <span>If it's cut, fastened or fit on a jobsite, ask &mdash; odds are it's on the list.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="how" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono eyebrow">How it goes</p>
+          <h2>Four steps, no surprises.</h2>
+        </div>
+        <p class="prose">The order matters here &mdash; each step exists so the next one can't go
+          sideways. You'll know the scope and the number before anybody picks up a saw.</p>
+      </div>
+
+      <ol class="steps" style="list-style:none;padding:0;margin-top:clamp(32px,5vw,50px)">
+        <li class="step">
+          <span class="mono">Step 01</span>
+          <h3>You call</h3>
+          <p>Tell us what you're looking at. A few minutes on the phone usually sorts out whether
+            it's a two-day fix or a two-week build.</p>
+        </li>
+        <li class="step">
+          <span class="mono">Step 02</span>
+          <h3>Walkthrough</h3>
+          <p>We come out, measure, and look at what's behind the finish surface &mdash; because
+            that's where the surprises live.</p>
+        </li>
+        <li class="step">
+          <span class="mono">Step 03</span>
+          <h3>Written estimate</h3>
+          <p>Scope, materials and price in writing, itemized by stage, so you can see exactly
+            what you're paying for.</p>
+        </li>
+        <li class="step">
+          <span class="mono">Step 04</span>
+          <h3>Build &amp; walk it</h3>
+          <p>We build it, clean up behind ourselves, and walk the finished work with you before
+            the last invoice goes out.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ONE CALL ============ -->
+  <section id="why">
+    <div class="wrap split">
+      <div>
+        <p class="mono eyebrow">One call does it all</p>
+        <h2>The gap between trades is where projects go wrong.</h2>
+        <p class="prose" style="margin-top:20px">Framing crews leave, trim carpenters arrive, and
+          nobody owns the inch where the two meet. When the same hands do the rough and the finish,
+          the finish has somewhere square to land &mdash; and there's one phone number when you have
+          a question.</p>
+        <p class="prose" style="margin-top:16px">RMN Carpentry Services works out of Steger and takes
+          jobs across the south suburbs, from a single rotted deck board to a full basement build-out.</p>
+      </div>
+
+      <div class="claims">
+        <div class="claim">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--chalk)" stroke-width="1.7" stroke-linecap="square" aria-hidden="true">
+            <path d="M3 20 L21 20"></path><path d="M6 20 L6 8 L18 8 L18 20"></path><path d="M6 8 L12 3 L18 8"></path>
+          </svg>
+          <h3>Framing to trim, one crew</h3>
+          <p>No handoffs, no scheduling gaps, no two contractors pointing at each other.</p>
+        </div>
+        <div class="claim">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--chalk)" stroke-width="1.7" stroke-linecap="square" aria-hidden="true">
+            <path d="M3 21 L21 3"></path><path d="M3 21 L3 12"></path><path d="M3 21 L12 21"></path>
+            <path d="M7 17 L9 19"></path><path d="M11 13 L13 15"></path><path d="M15 9 L17 11"></path>
+          </svg>
+          <h3>Laid out, not eyeballed</h3>
+          <p>Lines snapped, walls plumbed, openings squared. The work that hides behind drywall is
+            the work that decides how the trim looks.</p>
+        </div>
+        <div class="claim">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--chalk)" stroke-width="1.7" stroke-linecap="square" aria-hidden="true">
+            <path d="M12 2 L20 6 V12 C20 17 16 20.5 12 22 C8 20.5 4 17 4 12 V6 Z"></path>
+            <path d="M8.5 12 L11 14.5 L15.5 9.5"></path>
+          </svg>
+          <h3>Licensed &amp; insured</h3>
+          <p>Certificate available on request before work starts.</p>
+        </div>
+        <div class="claim">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--chalk)" stroke-width="1.7" stroke-linecap="square" aria-hidden="true">
+            <path d="M3 6 H21"></path><path d="M3 12 H21"></path><path d="M3 18 H14"></path>
+            <path d="M6 6 V9"></path><path d="M10 6 V9"></path><path d="M14 6 V9"></path><path d="M18 6 V9"></path>
+          </svg>
+          <h3>Clear, itemized pricing</h3>
+          <p>Estimates broken out by stage and materials &mdash; you see where the money goes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section id="area" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono eyebrow">Service area</p>
+          <h2>Steger, and the towns around it.</h2>
+        </div>
+        <p class="prose">Based in Steger, Illinois, working the south suburbs and Will County line.
+          If your town isn't listed, call anyway &mdash; it's usually close enough.</p>
+      </div>
+      <div class="towns">
+        <span class="town town-home">Steger &#9733;</span>
+        <span class="town">Chicago Heights</span>
+        <span class="town">South Chicago Heights</span>
+        <span class="town">Crete</span>
+        <span class="town">Park Forest</span>
+        <span class="town">Matteson</span>
+        <span class="town">Richton Park</span>
+        <span class="town">Olympia Fields</span>
+        <span class="town">Flossmoor</span>
+        <span class="town">Homewood</span>
+        <span class="town">Glenwood</span>
+        <span class="town">Sauk Village</span>
+        <span class="town">Monee</span>
+        <span class="town">University Park</span>
+        <span class="town">Beecher</span>
+        <span class="town">Peotone</span>
+        <span class="town">Frankfort</span>
+        <span class="town">Mokena</span>
+        <span class="town">New Lenox</span>
+        <span class="town">Tinley Park</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="mono eyebrow">Get a number on it</p>
+
+      <div class="contact-grid">
+        <a class="card" href="tel:+17087582910">
+          <span class="mono">Phone</span>
+          <span class="card-val">(708) 758-2910</span>
+          <small>Fastest way to reach us &mdash; leave a message if we're on a roof.</small>
+        </a>
+        <a class="card" href="mailto:rmncarpentry@hotmail.com?subject=Carpentry%20project%20inquiry&amp;body=Town%3A%0APhone%3A%0AWhat%20you%27re%20looking%20at%3A%0A">
+          <span class="mono">Email</span>
+          <span class="card-val">rmncarpentry@hotmail.com</span>
+          <small>Send the town, your number and a short description.</small>
+        </a>
+        <div class="card">
+          <span class="mono">Shop</span>
+          <span class="card-val">Steger, IL</span>
+          <small>Serving the Chicago Southland &amp; Will County.</small>
+        </div>
+      </div>
+
+      <div class="closer">
+        <h2>Tell us what you're looking at.</h2>
+        <a class="btn" href="tel:+17087582910">Call (708) 758-2910</a>
+        <a class="btn btn-ghost" href="mailto:rmncarpentry@hotmail.com?subject=Carpentry%20project%20inquiry">Email us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="wrap"><div class="tape"></div></div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="mono">RMN Carpentry Services &middot; Steger, IL &middot; Contractor</span>
+    <span class="mono">
+      <a href="tel:+17087582910">(708) 758-2910</a> &nbsp;&middot;&nbsp;
+      <a href="mailto:rmncarpentry@hotmail.com">rmncarpentry@hotmail.com</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.facebook.com/profile.php?id=100024740245020" target="_blank" rel="noopener">Facebook</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
